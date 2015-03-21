@@ -3,4 +3,8 @@ alembic.ini
 __pycache__/
 static/
 test.db
+bin/
+lib/
+pyvenv.cfg
+config.py
 
