@@ -1,0 +1,27 @@
+{% include('base.html') %}
+
+{% block content %}
+
+    <div class='col-md-3'></div>
+
+    <div class='col-md-6'>
+        <div class="form-group">
+            <h1 style='font-size: 7em'>ANR Proxy</h1>
+        </div>
+        <form action="{{ url_for('generate_proxies') }}" method="POST" >
+            <div class="form-group">
+                <div>
+                    <textarea rows=20 class="form-control" id="decklist" name="decklist" placeholder='Enter your decklist here...'></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <button type="submit" id="submit_decklist" name="submit_decklist" class="btn btn-lg btn-block btn-primary">Display Images</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class='col-md-3'></div>
+
+{% endblock content %}

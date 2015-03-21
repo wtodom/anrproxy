@@ -1,0 +1,6 @@
+alembic.ini
+.DS_Store
+__pycache__/
+static/
+test.db
+
