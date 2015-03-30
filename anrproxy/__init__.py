@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 
 from flask import Flask, render_template, request
 from flask_debugtoolbar import DebugToolbarExtension
@@ -25,7 +26,6 @@ def get_images(card_list):
             card = card.strip()
             count = int(re.findall('^([0-9])x ', card)[0])
             name = re.findall('^[0-9]x (.*$)', card)[0]
-            print(name)
             name = name.replace('\xe2\x80\xa2', '').strip()
             name = name.replace('•', '').strip()
             db_card = Card.query.filter_by(card_name=name).first()
