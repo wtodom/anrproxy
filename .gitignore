@@ -7,4 +7,5 @@ bin/
 lib/
 pyvenv.cfg
 config.py
+*.pyc
 

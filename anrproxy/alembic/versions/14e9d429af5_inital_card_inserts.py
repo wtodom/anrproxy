@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from __future__ import absolute_import, unicode_literals
+
 """inital card inserts
 
 Revision ID: 14e9d429af5
@@ -19,8 +23,8 @@ import sqlalchemy as sa
 def upgrade():
     card = op.create_table(
         'card',
-        sa.Column('file_name', sa.String(100), primary_key=True, nullable=False),
-        sa.Column('card_name', sa.String(100), nullable=False)
+        sa.Column('file_name', sa.UnicodeText(100), primary_key=True, nullable=False),
+        sa.Column('card_name', sa.UnicodeText(100), nullable=False)
     )
 
     op.bulk_insert(card, [
