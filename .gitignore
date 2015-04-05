@@ -5,8 +5,10 @@ static/
 test.db
 bin/
 lib/
+include/
 pyvenv.cfg
 config.py
 *.pyc
 fabfile.py
+.Python
 
