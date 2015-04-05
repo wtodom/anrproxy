@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 from flask import Flask, render_template, request
 from flask_debugtoolbar import DebugToolbarExtension
 from flask.ext.sqlalchemy import SQLAlchemy
+from sqlalchemy import func
 
 import re
 
@@ -28,8 +29,8 @@ def get_images(card_list):
             name = re.findall('^[0-9]x (.*$)', card)[0]
             name = name.replace('\xe2\x80\xa2', '').strip()
             name = name.replace('•', '').strip()
-            db_card = Card.query.filter_by(card_name=name).first()
-            # print(db_card)
+            db_card = Card.query.filter(
+                func.lower(name) == func.lower(Card.card_name)).first()
             if db_card:
                 card_files.extend([db_card.file_name] * count)
             else:
