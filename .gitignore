@@ -8,4 +8,5 @@ lib/
 pyvenv.cfg
 config.py
 *.pyc
+fabfile.py
 
