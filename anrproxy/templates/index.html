@@ -11,7 +11,7 @@
         <form action="{{ url_for('generate_proxies') }}" method="POST" >
             <div class="form-group">
                 <div>
-                    <textarea rows=20 class="form-control" id="decklist" name="decklist" placeholder='Enter your decklist here...'></textarea>
+                    <textarea rows=20 class="form-control" id="decklist" name="decklist" placeholder="{{ placeholder }}"></textarea>
                 </div>
             </div>
             <div class="form-group">

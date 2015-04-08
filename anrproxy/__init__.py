@@ -40,16 +40,23 @@ def get_images(card_list):
 
 
 @app.route('/')
-def hello_world():
-    return render_template('index.html')
+def index():
+    placeholder = '\n'.join([
+        'Format:',
+        '3x Jackson Howard',
+        '3x NAPD Contract',
+        '3x Eli 1.0',
+        'and so on...',
+        '(netrunnerdb "plain text" also works)'])
+    return render_template('index.html', placeholder=placeholder)
 
 
 @app.route('/proxies', methods=['POST'])
 def generate_proxies():
     print(request.form)
     cards = get_images(request.form['decklist'])
-    # print(cards)
-    return render_template('proxies.html', cards=cards)
+    return render_template(
+        'proxies.html', cards=cards)
 
 
 if __name__ == '__main__':
