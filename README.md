@@ -1,64 +1,35 @@
 ## Image File Issues
-- Special Order is missing the last 'r'.
-- Peak Efficiency is missing the initial 'p'.
+- Peak Efficiency is missing the initial 'p'. (incorrect in database)
+- jinteki.png is linked to 'Inti'.
+- All cards with quotes in their names probably need to have the actual double-quote
+- Power Tap is linked to 'Power Nap'.
+- Quetzal is linked to 'Fetal AI'.
+- Shi-Kyu is linked to 'Ashigaru'
+- Deus Ex is linked to 'Caduceus'.
+- Mr. Li is linked to 'Merlin'.
+- Nasir is linked to 'Inside Man'.
+- Noise is linked to 'Diesel'.
+- Power Tap is linked to 'Power Nap'.
+- special-order.png is missing the final 'r' (so it's special-orde.png).
+- Swarm is linked to 'edward-kim.png'
+- 'weyland-consortium.png' is linked to 'Weyland Consortium: Because We Built It' (should be 'Weyland Consortium: Building a Better World')
+- 'tmi.png' is linked to 'Inti'.
 
 ## Not yet investigated
 
-- Andromeda: Dispossessed Ristie
-- Argus Security: Protection Guaranteed
-- Ash 2X3ZB9CY
-- Blue Sun: Powering the Future
 - Cerberus "Cuj.0" H3
 - Cerberus "Lady" H1
 - Cerberus "Rex" H2
-- Chaos Theory: W\xc3\xbcnderkind
+- Chaos Theory: Wünderkind
 - Chronos Protocol: Selective Mind-mapping
-- Deus X
-- Docklands Crackdown
 - Déjà Vu'
 - Edward Kim: Humanity's Hammer
-- Fetal AI
-- GRNDL Refinery
-- Gabriel Santiago: Consummate Professional
-- Gagarin Deep Space: Expanding the Horizon
-- Haas-Bioroid: Engineering the Future
-- Haas-Bioroid: Stronger Together
-- IQ
-- Industrial Genomics: Growing Solutions
 - Jinteki: Personal Evolution
 - Kate "Mac" McCaffrey: Digital Tinker
 - Ken "Express" Tenma: Disappeared Clone
-- Laramy Fisk: Savvy Investor
-- Leela Patel: Trained Pragmatist
-- MaxX: Maximum Punk Rock
-- Mr. Li
-- NBN: Making News
-- NEXT Bronze
-- NEXT Silver
-- Nasir Meidan: Cyber Explorer
-- Near-Earth Hub: Broadcast Center
-- Neural EMP
-- Nisei MK II
-- Noise: Hacker Extraordinaire
-- Plan B
-- Power Tap
-- Quetzal: Free Spirit
-- RSVP
 - Rielle "Kit" Peddler: Transhuman
-- Shi.Ky\xc5\xab
-- Snare!
-- Special Order
-- Swarm
-- TGTBT
-- TMI
-- The Collective: Williams, Wu, et al.
-- The Foundry: Refining the Process
-- The Masque: Cyber General
-- The Shadow: Pulling the Strings
-- Titan Transnational: Investing In Your Future
-- Valencia Estevez: The Angel of Cayambe
-- Weyland Consortium: Building a Better World
-- Whizzard: Master Gamer
+- Shi.Kyū
+
 
 ## Not yet added
 
@@ -82,3 +53,6 @@
 - Capital Investors
 - Negotiator
 - Tech Startup
+- The Collective: Williams, Wu, et al.
+- The Masque: Cyber General
+- The Shadow: Pulling the Strings
