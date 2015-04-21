@@ -1,5 +1,5 @@
 ## Image File Issues
-- Peak Efficiency is missing the initial 'p'. (incorrect in database)
+- 'peak-efficiency.jpg' is missing the initial 'p'. (listed as 'eak-efficiency.jpg')
 - jinteki.png is linked to 'Inti'.
 - All cards with quotes in their names probably need to have the actual double-quote
 - Power Tap is linked to 'Power Nap'.
@@ -14,20 +14,19 @@
 - Swarm is linked to 'edward-kim.png'
 - 'weyland-consortium.png' is linked to 'Weyland Consortium: Because We Built It' (should be 'Weyland Consortium: Building a Better World')
 - 'tmi.png' is linked to 'Inti'.
+- 'rielle-kit-peddler-transhuman.jpg' is linked to [Rielle 'Kit' Peddler: Transhuman] rather than [Rielle "Kit" Peddler: Transhuman]
+- Edward Kim: Humanity's Hammer isn't in the db at all ('edward-kim.jpg')
+- [Cerberus "Cuj.0" H3] is listed as [Cerberus 'Cuj.0' H3] and is linked to 'verberus-cujo-h3.jpg'
+- [Cerberus "Lady" H1] is listed as [Cerberus 'Lady' H1]
+- [Cerberus "Rex" H2] is listed as [Cerberus 'Rex' H2]
+- [Kate "Mac" McCaffrey: Digital Tinker] isn't in the db at all ('kate-mac-mccaffrey.png')
+- Ken "Express" Tenma: Disappeared Clone is listed as  Ken 'Express' Tenma: Disappeared Clone ('ken-express-tenma-disappeared-clone.png')
 
-## Not yet investigated
 
-- Cerberus "Cuj.0" H3
-- Cerberus "Lady" H1
-- Cerberus "Rex" H2
+## Unicode stuff
+
 - Chaos Theory: Wünderkind
-- Chronos Protocol: Selective Mind-mapping
-- Déjà Vu'
-- Edward Kim: Humanity's Hammer
-- Jinteki: Personal Evolution
-- Kate "Mac" McCaffrey: Digital Tinker
-- Ken "Express" Tenma: Disappeared Clone
-- Rielle "Kit" Peddler: Transhuman
+- Déjà Vu
 - Shi.Kyū
 
 
