@@ -7,7 +7,18 @@ from flask_debugtoolbar import DebugToolbarExtension
 from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy import func
 
+import yaml
+
 import re
+import logging.config
+
+
+with open('logging.yaml', 'r') as f:
+    log_conf = yaml.load(f)
+
+logger = logging.getLogger(__name__)
+
+logging.config.dictConfig(log_conf)
 
 
 app = Flask(__name__)
@@ -21,6 +32,7 @@ from .models import Card
 
 
 def get_images(card_list):
+    logger.info("Getting images.")
     card_files = []
     for card in card_list.split('\n'):
         if re.match('^([0-9])x ', card):
@@ -34,8 +46,7 @@ def get_images(card_list):
             if db_card:
                 card_files.extend([db_card.file_name] * count)
             else:
-                # log somehow
-                pass
+                logger.error("Image not found for card: " + name.encode('utf-8'))
     return card_files
 
 
