@@ -9,11 +9,12 @@ from sqlalchemy import func
 
 import yaml
 
+import os
 import re
 import logging.config
 
 
-with open('logging.yaml', 'r') as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logging.yaml'), 'r') as f:
     log_conf = yaml.load(f)
 
 logger = logging.getLogger(__name__)
