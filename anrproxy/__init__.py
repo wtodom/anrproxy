@@ -14,14 +14,8 @@ import re
 import logging.config
 
 
-here = os.path.dirname(os.path.abspath(__file__))
-
-with open(os.path.join(here, 'logging.yaml'), 'r') as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logging.yaml'), 'r') as f:
     log_conf = yaml.load(f)
-    log_conf['handlers']['info_file_handler']['filename'] = str(
-        os.path.join(here, 'error.log'))
-    log_conf['handlers']['error_file_handler']['filename'] = str(
-        os.path.join(here, 'info.log'))
 
 logger = logging.getLogger(__name__)
 
