@@ -11,5 +11,4 @@ config.py
 *.pyc
 fabfile.py
 .Python
-*.log
 
