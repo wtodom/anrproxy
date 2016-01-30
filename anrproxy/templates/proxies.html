@@ -1,7 +1,7 @@
 {% include('base.html') %}
 
 {% for card in cards %}
-    <div style="float:left; padding:6px">
+    <div style="float:left">
         <img src="{{ url_for('static', filename=card) }}" width="222" height="319" />
     </div>
 {% endfor %}
