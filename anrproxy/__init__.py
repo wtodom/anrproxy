@@ -23,10 +23,10 @@ from .models import Card
 def get_images(card_list):
     card_files = []
     for card in card_list.split('\n'):
-        if re.match('^([0-9])x ', card):
+        if re.match('^([0-9]+)x ', card):
             card = card.strip()
-            count = int(re.findall('^([0-9])x ', card)[0])
-            name = re.findall('^[0-9]x (.*$)', card)[0]
+            count = int(re.findall('^([0-9]+)x ', card)[0])
+            name = re.findall('^[0-9]+x (.*$)', card)[0]
             name = name.replace('\xe2\x80\xa2', '').strip()
             name = name.replace('•', '').strip()
             db_card = Card.query.filter(
